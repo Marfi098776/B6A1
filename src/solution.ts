@@ -134,7 +134,7 @@ type Product = {
   name: string;
   price: number;
   quantity: number;
-  discount?: number; // percentage (0–100)
+  discount?: number;
 };
 
 function calculateTotalPrice(products: Product[]): number {
