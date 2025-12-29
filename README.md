@@ -15,3 +15,12 @@ type personKeys = keyof Person;
 ```
 
 in this case personKeys becomes a union of string literal, not just string.For instance Keyof turns a type's structure into a set of allowed options. 
+
+# Explain the difference between any, unknown, and never types in TypeScript.
+
+let's explain these separately
+- *any*: this is out of type safety. we can call or access  anything.here type checking are disable.
+
+- *unknown*: this is the safe version of *any*.It prefers that it don't know the type yet but we must have to prove it before using it. Otherwise it return error.So we must narrow the type first.
+
+- *never*: It represents values that cannot exit.We can use it when a function never returns, doing exhaustive checks.
